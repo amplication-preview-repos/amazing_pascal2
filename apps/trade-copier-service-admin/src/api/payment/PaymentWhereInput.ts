@@ -1,0 +1,12 @@
+import { StringFilter } from "../../util/StringFilter";
+import { FloatNullableFilter } from "../../util/FloatNullableFilter";
+import { DateTimeNullableFilter } from "../../util/DateTimeNullableFilter";
+import { UserWhereUniqueInput } from "../user/UserWhereUniqueInput";
+
+export type PaymentWhereInput = {
+  id?: StringFilter;
+  amount?: FloatNullableFilter;
+  status?: "Option1";
+  transactionDate?: DateTimeNullableFilter;
+  user?: UserWhereUniqueInput;
+};
